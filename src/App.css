@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary-heading-color: #16f2b3;
+	--secondary-heading-color: #ec4899;
+	--card-background-color: #11152c;
+	--card-glow-color: #16f2b3b3;
+	--card-primary-text-color: #fff;
+	--card-secondary-text-color: #ffffffcb;
+	--section-background-color: #0d1225;
+}
+
+.app {
+	@apply relative w-full h-full min-h-screen overflow-hidden;
+}
+
+.stars,
+.twinkling,
+.clouds {
+	@apply absolute w-full h-full block inset-0;
+}
+
+.stars {
+	@apply z-0;
+	background: #000 url("/images/stars.png") repeat top center;
+}
+
+.twinkling {
+	@apply z-[1] animate-[move-twink-back_200s_linear_infinite];
+	background: transparent url("/images/twinkling.png") repeat top center;
+}
+
+.clouds {
+	@apply z-[2] opacity-30 animate-[move-clouds-back_200s_linear_infinite];
+	background: transparent url("/images/clouds.png") repeat top center;
+}
+
+@keyframes move-twink-back {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -10000px 5000px;
+	}
+}
+
+@keyframes move-clouds-back {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 10000px 0;
+	}
+}
+
+@font-face {
+	font-family: "Skyscapers";
+	src: url("//2ttf.com/webfont/6IF8GLA3aiM/webfont.ttf") format("truetype");
+}
+
+/* LOADER */
+
+.loader {
+	@apply absolute h-full w-full flex items-center justify-center;
+}
+
+.title {
+	@apply relative z-[3] text-center;
+}
+
+.title h1 {
+	@apply text-4xl text-white block;
+	font-family: "Lato", sans-serif;
+	background: linear-gradient(#eee, #0fa4af);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* HOME */
+
+.header {
+	@apply text-4xl text-center text-white block relative z-[3] mt-[10em] mx-auto;
+	font-family: "Lato", sans-serif;
+	background: linear-gradient(#eee, #333);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+	@apply text-4xl text-white block;
+	font-family: "Skyscapers", sans-serif;
+	background: linear-gradient(#eee, #0fa4af);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.hello {
+	@apply mx-auto;
+	/* text-shadow: 4px 6px 6px rgba(196, 183, 183, 0.714); */
+}
+
+/* ABOUT */
+
+.page-heading {
+	@apply text-3xl md:text-4xl text-center font-poppins font-bold primary-heading-color p-10 text-shadow;
+}
+
+.text-shadow {
+	text-shadow: 4px 6px 6px rgba(22, 242, 179, 0.35);
+}
+.card-layout {
+	@apply card-bg text-center rounded-lg w-full flex-grow max-w-md p-2;
+}
+
+.card-layout-head {
+	@apply font-semibold text-sm text-[var(--card-primary-text-color)] md:text-base mt-2;
+}
+.card-layout-body {
+	@apply text-xs  font-normal font-poppins text-[var(--card-secondary-text-color)];
+}
+
+/* SKILLS */
+
+.skills img {
+	@apply w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain bg-[var(--card-primary-text-color)] shadow-lg p-4 rounded-md;
+}
+
+/* CARDS */
+/* Custom CSS */
+/* .slick-dots.slick-thumb {
+	margin-top: 0px;
+} */
+
+.slick-dots.slick-thumb li {
+	width: 40px; /* Adjust size as needed */
+	height: 40px; /* Adjust size as needed */
+}
+
+.slick-dots.slick-thumb li button {
+	width: 100%;
+	height: 100%;
+}
+
+.slick-dots.slick-thumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Ensures image covers the dot */
+}
+
+/* COLORS */
+.card-bg {
+	@apply bg-[var(--card-background-color)] border border-[#1f223c] ;
+}
+
+.primary-heading-color {
+	color: var(--primary-heading-color);
+}
+
+/* CARDS */
+.card-shadow {
+	box-shadow: 0 6px 8px var(--card-glow-color),
+		0 -3px 6px var(--card-glow-color);
+}
+
+/* .app-bg {
+	background: "linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)";
+} */
+.section-bg {
+	@apply bg-[var(--section-background-color)] text-[var(--card-primary-text-color)];
+}
+
+/* CONTACT */
+.contact-input {
+	@apply w-full mb-4 p-3 card-bg rounded-md shadow-lg focus:outline-none;
+}
+.contact-btn {
+	@apply w-1/2 min-w-fit font-bold bg-[var(--primary-heading-color)] p-3 rounded-md shadow-md hover:bg-[var(--card-glow-color)] transition-colors duration-1000 focus:outline-none focus:ring-2 focus:ring-opacity-50 text-sky-900;
+}
