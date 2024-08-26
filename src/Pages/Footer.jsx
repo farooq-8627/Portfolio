@@ -23,7 +23,7 @@ const Footer = () => {
 					<div className="flex items-center gap-5">
 						<a
 							target="_blank"
-							href="https://github.com/said7388/Portfolio"
+							href="https://github.com/farooq-8627/Portfolio"
 							className="flex items-center gap-2 uppercase hover:text-[var(--primary-heading-color)]"
 						>
 							<IoStar />
@@ -31,7 +31,7 @@ const Footer = () => {
 						</a>
 						<a
 							target="_blank"
-							href="https://github.com/said7388/Portfolio/fork"
+							href="https://github.com/farooq-8627/Portfolio/fork"
 							className="flex items-center gap-2 uppercase hover:text-[var(--primary-heading-color)]"
 						>
 							<CgGitFork />
