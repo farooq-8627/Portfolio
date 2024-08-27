@@ -13,7 +13,7 @@ const Skills = () => {
 		<section id="skills" className="section-bg py-12">
 			<header>
 				<h2 className="page-heading" data-aos="fade-down">
-					My Recent Works
+					Skills
 				</h2>
 			</header>
 
