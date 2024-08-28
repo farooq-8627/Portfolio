@@ -45,7 +45,7 @@ const Home = () => {
 					<img
 						src="/images/final-img.png"
 						alt="Profile-photo"
-						className="w-full h-full bg-[#0FA4AF] bg-opacity-20 rounded-full object-cover"
+						className="w-full h-full bg-[#0FA4AF] mix-blend-darken bg-opacity-20 rounded-full object-cover"
 					/>
 				</figure>
 			</header>

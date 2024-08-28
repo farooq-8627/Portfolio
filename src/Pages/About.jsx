@@ -25,7 +25,7 @@ const About = () => {
 					<img
 						src="/images/about.png"
 						alt="Profile-photo"
-						className="w-full h-full bg-[var(--card-background-color)] bg-opacity-30 rounded-full object-contain drop-shadow-2xl"
+						className="w-full h-full bg-[var(--card-background-color)] bg-opacity-50 photo-shadow rounded-full object-contain drop-shadow-2xl"
 					/>
 				</figure>
 				<article className="w-full p-8 lg:w-1/2 text-lg font-extralight font-poppins">

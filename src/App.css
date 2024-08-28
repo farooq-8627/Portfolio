@@ -157,7 +157,7 @@
 
 /* COLORS */
 .card-bg {
-	@apply bg-[var(--card-background-color)] border border-[#1f223c] ;
+	@apply bg-[var(--card-background-color)] border border-[#1f223c];
 }
 
 .primary-heading-color {
@@ -168,6 +168,11 @@
 .card-shadow {
 	box-shadow: 0 6px 8px var(--card-glow-color),
 		0 -3px 6px var(--card-glow-color);
+}
+
+.photo-shadow {
+	box-shadow: 2px 6px 8px var(--card-glow-color),
+		-2px -4px 8px var(--card-glow-color);
 }
 
 /* .app-bg {
