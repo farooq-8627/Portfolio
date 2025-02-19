@@ -1,6 +1,26 @@
 // src/data/projects.js
 const projectsData = [
 	{
+		title: "Blitzs",
+		images: [
+			"/projects/blitzs-home.webp",
+			"/projects/blitzs-bookmark.webp",
+			"/projects/blitzs-search.webp",
+			"/projects/blitzs-menu.webp",
+		],
+		text: "Blitzs is a React Native app built with Expo and NativeWind, designed for seamless news reading and discovery. Users can browse articles across various categories, search for specific topics, and bookmark articles for later reading. With a clean and intuitive UI, Blitzs ensures a smooth reading experience. The app is available on the Google Play Store, making it easy to stay updated with the latest news anytime, anywhere.",
+		github: "https://github.com/farooq-8627/Newsblitz-app",
+		link: "/",
+		tech: [
+			"React-Native",
+			"Expo",
+			"NativeWind",
+			"Node.js",
+			"Express",
+			"MongoDB",
+		],
+	},
+	{
 		title: "Connectz",
 		images: [
 			"/projects/connectz-chat-pre.webp",
@@ -44,7 +64,7 @@ const projectsData = [
 		],
 		text: "Developed a fully responsive and animated portfolio using React and Tailwind CSS. The project features seamless device adaptability and smooth animations, reflecting my focus on creating visually appealing and highly interactive user interfaces.",
 		github: "https://github.com/farooq-8627/Portfolio",
-		link: "/project-2",
+		link: "https://farooqs-portfolio.vercel.app/",
 		tech: ["React", "Tailwind CSS"],
 	},
 ];
